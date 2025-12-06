@@ -1,0 +1,36 @@
+<?php
+// [file name]: permissions.php
+return [
+    'available_permissions' => [
+        'users.view' => 'View Users',
+        'users.create' => 'Create Users',
+        'users.edit' => 'Edit Users',
+        'users.delete' => 'Delete Users',
+        'roles.view' => 'View Roles',
+        'roles.create' => 'Create Roles',
+        'roles.edit' => 'Edit Roles',
+        'roles.delete' => 'Delete Roles',
+        'cases.view' => 'View Cases',
+        'cases.create' => 'Create Cases',
+        'cases.edit' => 'Edit Cases',
+        'cases.delete' => 'Delete Cases',
+        'clients.view' => 'View Clients',
+        'clients.create' => 'Create Clients',
+        'clients.edit' => 'Edit Clients',
+        'clients.delete' => 'Delete Clients',
+        'hearings.view' => 'View Hearings',
+        'hearings.create' => 'Create Hearings',
+        'hearings.edit' => 'Edit Hearings',
+        'hearings.delete' => 'Delete Hearings',
+        'documents.view' => 'View Documents',
+        'documents.create' => 'Create Documents',
+        'documents.edit' => 'Edit Documents',
+        'documents.delete' => 'Delete Documents',
+        'reports.view' => 'View Reports',
+        'reports.generate' => 'Generate Reports',
+        'settings.view' => 'View Settings',
+        'settings.manage' => 'Manage Settings',
+        'subscriptions.view' => 'View Subscriptions',
+        'subscriptions.manage' => 'Manage Subscriptions',
+    ]
+];

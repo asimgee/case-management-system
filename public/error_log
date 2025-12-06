@@ -1,0 +1,7 @@
+[03-Nov-2025 01:12:04 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.3.0". You are running 8.2.29. in /home/alltnoxc/app.alltoolpro.com/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home/alltnoxc/app.alltoolpro.com/vendor/composer/autoload_real.php(25): require()
+#1 /home/alltnoxc/app.alltoolpro.com/vendor/autoload.php(22): ComposerAutoloaderInitd52328f93ac4b6195a3a11b5e6657c88::getLoader()
+#2 /home/alltnoxc/app.alltoolpro.com/public/index.php(34): require('/home/alltnoxc/...')
+#3 {main}
+  thrown in /home/alltnoxc/app.alltoolpro.com/vendor/composer/platform_check.php on line 26

@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # --------------------------------------------
+    # 1️⃣ Force HTTPS if SSL is available
+    # --------------------------------------------
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # --------------------------------------------
+    # 2️⃣ Redirect all requests to /public folder
+    # --------------------------------------------
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ /public/$1 [L,QSA]
+</IfModule>
+
+# --------------------------------------------
+# 3️⃣ Protect sensitive project files
+# --------------------------------------------
+<FilesMatch "^(artisan|\.env|composer\.(json|lock)|package\.json|webpack\.mix\.js|vite\.config\.js)$">
+    Require all denied
+</FilesMatch>
